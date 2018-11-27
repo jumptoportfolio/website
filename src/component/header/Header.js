@@ -10,6 +10,9 @@ const Header = props => {
             <div className="header__title">
                 { title }
             </div>
+            <div className="header__underline">
+
+            </div>
             {subtitle ? (
                 <div className="header__subtitle">
                     { subtitle }
