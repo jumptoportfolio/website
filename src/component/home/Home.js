@@ -5,11 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class Home extends Component {
     render() {
         return (
-<<<<<<< HEAD
-            <div>
-                <h1>jina</h1>
-            </div>
-=======
             <section id="home" className="home">
                 <div className="home__header">
                     <div className="home-header__row">
@@ -29,7 +24,6 @@ class Home extends Component {
                     </div>
                 </div>
             </section>
->>>>>>> home
         );
     }
 }
