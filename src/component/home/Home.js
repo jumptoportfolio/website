@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "./Home.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Home extends Component {
     render() {
