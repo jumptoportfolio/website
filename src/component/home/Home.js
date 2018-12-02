@@ -24,7 +24,7 @@ class Home extends Component {
                     <div className="home-header__row">
                         <div className="home-header__title">
                             Hello, Welcome to 
-                            <span className="home-header__title-highlight">MY HOMEPAGE</span>. <br/>
+                            <span className="home-header__title-highlight"> MY HOMEPAGE</span>. <br/>
                             I'm a full-stack web developer. <br/>
                         </div>
                         <button className="home-header__btn--over" 
