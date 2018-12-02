@@ -11,6 +11,8 @@
     "konva": "^2.5.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-fa": "^5.0.0",
+    "react-icons": "^3.2.2",
     "react-konva": "^16.6.31",
     "react-scripts": "2.1.1"
   },
@@ -18,8 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,5 +32,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "create-react-class": "^15.6.3"
+  }
 }
