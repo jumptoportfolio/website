@@ -1,25 +1,12 @@
 import React, { Component } from 'react';
 import "./Contact.css";
-// import daum from "daum-map-api";
-// import ReactDOM from 'react-dom';
-// import App from './../App';
-
 import Header from '../header/Header';
 const TITLE = 'CONTACT';
 const SUB_TITLE = 'Have a question or want to work together?';
 
 
-// ReactDOM.render(<App />, document.getElementById('root'));
-// daum();
 
 class Contact extends Component {
-    // componentDidMount() {                                                    
-    //     let el = document.getElementById('map');
-    //     let map = new daum.maps.Map(el, {
-    //       center: new daum.maps.LatLng(33.450701, 126.570667)
-    //     });
-    //     console.log("map",map)
-    //   }
 
     render() {
         return (
