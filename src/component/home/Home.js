@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./Home.css";
-import { Icon } from 'react-fa';
+import 'react-fa';
 
 
 class Home extends Component {
