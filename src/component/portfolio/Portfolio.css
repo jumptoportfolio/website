@@ -46,14 +46,14 @@
 
 .portfolio__project .project__details h2 {
     color: #fff;
-    margin-bottom: 0;
     font-size: 25px;
     cursor: default;
+    margin-bottom: 5px;
 }
 
 .portfolio__project .project__details p {
     color: #fff;
-    margin-top: 0;
+    margin-bottom: 18px;
     font-size: 20px;
     cursor: default;
 }
