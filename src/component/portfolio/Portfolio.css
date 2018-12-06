@@ -6,7 +6,7 @@
 
 .portfolio__projects {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -14,11 +14,64 @@
 }
 
 .portfolio__project {
+    position: relative;
     width: 300px;
     height: 300px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.portfolio__project:hover img {
+    transform: scale(1.2)
+}
+
+.portfolio__project .project__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    transform: scaleY(0);
+    transition: transform 0.5s
+}
+
+.portfolio__project:hover .project__details {
+    transform: scaleY(1)
+}
+
+.portfolio__project .project__details h2 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 25px;
+    cursor: default;
+}
+
+.portfolio__project .project__details p {
+    color: #fff;
+    margin-top: 0;
+    font-size: 20px;
+    cursor: default;
+}
+.portfolio__project .project__details .project-detail__more {
+    border: 2px solid tomato;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background .5s;
+}
+
+.portfolio__project .project__details .project-detail__more:hover {
+    border: 2px solid tomato;
+    background: tomato;    
 }
 
 .portfolio__project img {
     width: 100%;
     height: 100%;
+    transition: transform 0.5s
 }

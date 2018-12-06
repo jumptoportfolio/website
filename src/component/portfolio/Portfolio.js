@@ -18,25 +18,65 @@ const Portfolio = props => {
             <div className="portfolio__projects">
                 <div className="portfolio__project">
                     <img src={process.env.PUBLIC_URL + '/images/project_1.jpg'} />
+                    <div className="project__details">
+                        <h2>This is title</h2>
+                        <p>This is subtitle</p>
+                        <div className="project-detail__more">
+                            SEE MORE
+                        </div>
+                    </div>
                 </div>
                 <div className="portfolio__project">
                     <img src={process.env.PUBLIC_URL + '/images/project_1.jpg'} />
+                    <div className="project__details">
+                        <h2>This is title</h2>
+                        <p>This is subtitle</p>
+                        <div className="project-detail__more">
+                            SEE MORE
+                        </div>
+                    </div>
                 </div>
                 <div className="portfolio__project">
                     <img src={process.env.PUBLIC_URL + '/images/project_1.jpg'} />
+                    <div className="project__details">
+                        <h2>This is title</h2>
+                        <p>This is subtitle</p>
+                        <div className="project-detail__more">
+                            SEE MORE
+                        </div>
+                    </div>
                 </div>
                 <div className="portfolio__project">
                     <img src={process.env.PUBLIC_URL + '/images/project_1.jpg'} />
+                    <div className="project__details">
+                        <h2>This is title</h2>
+                        <p>This is subtitle</p>
+                        <div className="project-detail__more">
+                            SEE MORE
+                        </div>
+                    </div>
                 </div>
                 <div className="portfolio__project">
                     <img src={process.env.PUBLIC_URL + '/images/project_1.jpg'} />
+                    <div className="project__details">
+                        <h2>This is title</h2>
+                        <p>This is subtitle</p>
+                        <div className="project-detail__more">
+                            SEE MORE
+                        </div>
+                    </div>
                 </div>
                 <div className="portfolio__project">
                     <img src={process.env.PUBLIC_URL + '/images/project_1.jpg'} />
+                    <div className="project__details">
+                        <h2>This is title</h2>
+                        <p>This is subtitle</p>
+                        <div className="project-detail__more">
+                            SEE MORE
+                        </div>
+                    </div>
                 </div>
-                <div className="portfolio__project">
-                    <img src={process.env.PUBLIC_URL + '/images/project_1.jpg'} />
-                </div>
+               
             </div>
         </div>
     );
