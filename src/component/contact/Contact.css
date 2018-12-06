@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .contact{
     background-color: #252934;
     color : #04C2C9;
@@ -53,3 +54,105 @@
 }
 
 /*FOOTER #1B242F */
+=======
+
+.contact {
+    height: 100vh;
+    background: #252934;
+    padding: 100px 0 130px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contact-form__container {
+    background: rgba(0,0,0,.3);
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0, .5);
+    margin-top: 50px;
+}
+
+.contact-form__container form {
+    display: flex;
+}
+
+.contact-form__container .contact-form__left {
+    flex: 1.2;
+    padding: 0 30px 0 10px;
+    border-right: 1px solid #fff;
+}
+
+.contact-form__left .contact-form__box:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.contact-form__container .contact-form__right {
+    flex: 2;
+    padding: 0 10px;
+
+}
+
+.contact-form__box {
+    position: relative;
+
+}
+
+.contact-form__box label {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 7px 7px;
+    font-size: 16px;
+    pointer-events: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.contact-form__box input {
+    width: 100%;
+    padding: 7px 7px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1.5px solid #fff;
+}
+
+.contact-form__box textarea:valid ~ label,
+.contact-form__box textarea:focus ~ label,
+.contact-form__box input:valid ~ label,
+.contact-form__box input:focus ~ label {
+    color: #04C2C9;
+    top: -20px;
+    left: -7px;
+    font-size: 13px;
+}
+
+.contact-form__box textarea {
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 300px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    padding: 7px 7px;
+
+    /* width: 100%;
+    padding: 7px 7px; */
+    /* resize: none;
+    font-size: 16px;
+    border: none;
+    outline: none; */
+    /* background: transparent; */
+    /* border-bottom: 1px solid #fff; */
+}
+>>>>>>> portfolio
