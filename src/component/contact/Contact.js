@@ -22,19 +22,22 @@ class Contact extends Component {
                     <form>
                         <div className="contact-form__left">
                             <div className="contact-form__box">
-                                <input type="text" required></input>
+                                <input type="text" required />
                                 <label>Your name</label>
                             </div>
                             <div className="contact-form__box">
-                                <input type="text" required></input>
+                                <input type="text" required />
                                 <label>Your email</label>
                             </div>
 
                         </div>
                         <div className="contact-form__right">
                             <div className="contact-form__box">
-                                <textarea type="text" required></textarea>
+                                <textarea type="text" required />
                                 <label>Your message</label>
+                            </div>
+                            <div className="form-box__submit">
+                                <input type="submit" value="SEND" />
                             </div>
                         </div>
                     </form>
