@@ -8,7 +8,7 @@ const Home = ({ isTop, hambergerHandler, isHambergerCliked }) => {
 
     return (
         <div className="home">
-            <header className="home__header">
+            <header className={`home__header ${isTop ? '' : 'black'}`}>
                 <div className="home-header__logo">
                     <i className="fab fa-apple"></i>
                     <span className="subtitle">진아야공부하자</span>

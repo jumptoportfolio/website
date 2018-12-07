@@ -6,6 +6,8 @@ import Portfolio from './portfolio/Portfolio';
 import Contact from './contact/Contact';
 import Parallax from './parallax/Parallax';
 
+import { getScreenDemension } from './utils/screen'
+
 class App extends Component {
   constructor() {
     super()
@@ -15,17 +17,20 @@ class App extends Component {
     }
 
     this._hambergerHandler = this._hambergerHandler.bind(this)
+    this._windowScrollHander = this._windowScrollHander.bind(this)
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 100;
-      if (isTop !== this.state.isTop) {
-        this.setState({
-          isTop
-        })
-      }
-    })
+    window.addEventListener('scroll', this._windowScrollHander)
+  }
+
+  _windowScrollHander() {
+    const isTop = window.scrollY < getScreenDemension().height;
+    if (isTop !== this.state.isTop) {
+      this.setState({
+        isTop
+      })
+    }
   }
 
   _hambergerHandler() {

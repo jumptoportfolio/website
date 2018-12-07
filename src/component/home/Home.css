@@ -10,7 +10,6 @@
 
 .home .home__header {
     width: 100%;
-    max-width: 1280px;
     height: 70px;
     background: transparent;
     position: fixed;
@@ -20,7 +19,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: linear .8s;
+}
 
+.home .home__header.black {
+    /* background: #212121; */
+    background: black;
 }
 
 .home .home__header .home-header__logo {
@@ -30,6 +34,7 @@
     cursor: pointer;
     transition: .5s;
     overflow: hidden;
+    margin-left: 200px;
 }
 
 .home .home__header .home-header__logo .subtitle {
@@ -54,6 +59,7 @@
 .home-header__nav {
     display: flex;
     align-items: center;
+    margin-right: 200px;
 }
 
 .home-header__nav .nav__menu {
