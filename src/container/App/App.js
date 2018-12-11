@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { print } from 'Util/console'
+
 
 class App extends Component {
   constructor() {
@@ -10,9 +12,13 @@ class App extends Component {
 
   }
 
+  _onClick() {
+    print('zz')
+  }
+
   render() {
     return(
-      <div>
+      <div onClick={this._onClick}>
         버전2
       </div>
     )
