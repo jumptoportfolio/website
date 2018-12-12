@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import { print } from 'Util/console'
+import { print } from 'util/console'
 
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 import Home from '../Home/Home'
 
-import Header from '../../components/Header/Header'
+import Header from '../Header/Header'
 
 
 class App extends Component {

@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import './Header.css'
 
+import Hamburger from 'components/Hamburger/Hamburger'
+
 const Header = props => {
     return (
         <div className="header">
-            <Link to="/" className="item">Home</Link>
-            <Link to="/about" className="item">About</Link>
+            <Hamburger />
         </div>
     )
 }
