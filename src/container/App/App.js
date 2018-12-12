@@ -1,26 +1,34 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import { print } from 'Util/console'
+
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+
+import Home from '../Home/Home'
+
+import Header from '../../components/Header/Header'
 
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-
     }
 
   }
 
-  _onClick() {
-    print('zz')
-  }
-
   render() {
     return(
-      <div onClick={this._onClick}>
-        버전2
-      </div>
+      <Router>
+        <div>
+          <Header />
+          <Route 
+            exact 
+            path="/" 
+            render={() => <Home />}
+          />
+        </div>
+      </Router>
     )
   }
 }

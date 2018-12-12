@@ -1,0 +1,9 @@
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24px;
+    height: 16px;
+    position: relative;
+    cursor: pointer;
+}
