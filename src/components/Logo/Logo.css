@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+    /* margin-left: 200px; */
+}
+
+.subtitle {
+    font-size: 17px;
+    font-weight: 600;
+    /* margin-left: 10px; */
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+.logo:hover .subtitle {
+    transform: translateX(0);
+    opacity: .9;
+
+}

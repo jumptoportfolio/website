@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import 'react-fa'
+import './Logo.css'
 
-const Logo = props => {
+const Logo = ({ subtitle }) => {
     return (
-        <div>
-            
+        <div className="logo">
+            <i className="fab fa-apple"></i>
+            <span className="subtitle">{subtitle}</span>
         </div>
     );
 };

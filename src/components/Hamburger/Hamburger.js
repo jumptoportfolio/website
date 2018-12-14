@@ -2,36 +2,35 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Hamburger.css'
 
-class Hamburger extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isClicked: false
-        }
-    }
+const Hamburger = ({ toggleHamburger, isBurgerClicked }) => {
 
-    _toggleHamburger() {
-        this.setState(prevState => {
-            return {
-                isClicked: !prevState.isClicked
-            }
-        })
-    }
-
-    render() {
-        console.log(this.state.isClicked)
-        return (
-            <div 
-                onClick={this._toggleHamburger.bind(this)}
-                className={`hamburger ${this.state.isClicked ? 'active' : ''}`}
+    return (
+        <div>
+            {/* <Nav 
+                    toggleHamburger={this.state.isClicked}
+                /> */}
+            <div
+                onClick={
+                    // this._toggleHamburger.bind(this)
+                    toggleHamburger
+                }
+                className={`hamburger ${isBurgerClicked ? 'active' : ''}`}
             >
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
             </div>
-        )
-    }
+        </div>
+    )
+}
+
+Hamburger.defaultProps = {
+    isBurgerClicked: false
+}
+
+Hamburger.propTypes = {
+    isBurgerClicked: PropTypes.bool
 }
 
 
-export default Hamburger;
+export default Hamburger
